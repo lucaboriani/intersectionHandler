@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "jest __tests__/*.*",
     "e2e": "npx cypress open",
-    "bgE2e": "npx cypress run"
+    "bgE2e": "npx cypress run",
+    "instrument": "npx nyc instrument --compact=false src instrumented"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
