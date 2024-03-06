@@ -63,6 +63,10 @@ describe('checking  methods of handler : ', ()=>{
     })
     test('clear', ()=>{
         const registry = IntersectionHandler.getRegistry()
+        const element1 = document.createElement('div')
+        // act
+        IntersectionHandler.observe(element1, testCallbacks1)
+        expect(registry.size).toBe(1)
         IntersectionHandler.clear()
         expect(registry.size).toBe(0)
     })
